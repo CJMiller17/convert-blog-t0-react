@@ -7,27 +7,46 @@ import {
 
 // project styles
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './App.css'
+import './CSS/App.css'
 
 import About from './About'
 import App from './App'
 import ErrorPage from './ErrorPage'
+import Blog from "./Blog"
+import Projects from "./Projects"
+import Resume from "./Resume";
+
 
 const site = import.meta.env.BASE_URL
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <App />,
+      errorElement: <ErrorPage />,
+    },
+    {
+      path: "/about",
+      element: <About />,
+    },
+    {
+      path: "/blog",
+      element: <Blog />,
+    },
+    {
+      path: "/projects",
+      element: <Projects />,
+    },
+    {
+      path: "/resume",
+      element: <Resume />,
+    },
+  ],
   {
-    path: '/',
-    element: <App />,
-    errorElement: <ErrorPage />
-  },
-  {
-    path: '/about',
-    element: <About />
-  },
-], {
-  basename: site
-})
+    basename: site,
+  }
+);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />
