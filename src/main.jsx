@@ -16,39 +16,52 @@ import ErrorPage from './ErrorPage'
 import Blog from "./Blog"
 import Projects from "./Projects"
 import Resume from "./Resume";
-
+import Header from "./Header"
+import Footer from "./Footer"
 
 const site = import.meta.env.BASE_URL
 
 function Layout() {
-  <Header />
-  <Footer />
+  return (
+    <>
+      <Header />
+      <div id="page-content">
+        <Outlet />
+      </div>
+      <Footer />
+    </>
+  );
 }
 //gos inside the children array.
-const router = createBrowserRouter(
-  [
-    {
-      path: "/",
-      element: <App />,
-      errorElement: <ErrorPage />,
-    },
-    {
-      path: "/about",
-      element: <About />,
-    },
-    {
-      path: "/blog",
-      element: <Blog />,
-    },
-    {
-      path: "/projects",
-      element: <Projects />,
-    },
-    {
-      path: "/resume",
-      element: <Resume />,
-    },
-  ],
+const router = createBrowserRouter([
+  {
+    element: <Layout />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "/",
+        element: <App />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/blog",
+        element: <Blog />,
+      },
+      {
+        path: "/projects",
+        element: <Projects />,
+      },
+      {
+        path: "/resume",
+        element: <Resume />,
+      },
+    ],
+  }
+],
   {
     basename: site,
   }
