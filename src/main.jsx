@@ -2,7 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {
   createBrowserRouter,
-  RouterProvider
+  RouterProvider,
+  Outlet,
 } from 'react-router-dom'
 
 // project styles
@@ -19,6 +20,11 @@ import Resume from "./Resume";
 
 const site = import.meta.env.BASE_URL
 
+function Layout() {
+  <Header />
+  <Footer />
+}
+//gos inside the children array.
 const router = createBrowserRouter(
   [
     {
