@@ -1,30 +1,26 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Outlet,
-} from 'react-router-dom'
+import {createBrowserRouter,RouterProvider,Outlet} from 'react-router-dom'
 
 // project styles
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './CSS/App.css'
 
-import About from './About'
 import App from './App'
-import ErrorPage from './ErrorPage'
-import Blog from "./Blog"
+import { Navbar } from 'react-bootstrap'
+import About from './About'
+import Blog from "./Card"
 import Projects from "./Projects"
 import Resume from "./Resume";
-import Header from "./Header"
 import Footer from "./Footer"
+import ErrorPage from './ErrorPage'
 
 const site = import.meta.env.BASE_URL
 
 function Layout() {
   return (
     <>
-      <Header />
+      <Navbar />
       <div id="page-content">
         <Outlet />
       </div>

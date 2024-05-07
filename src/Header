@@ -1,8 +1,0 @@
-
-function Header() {
-  return (
-    console.log("This is the Header")
-  )
-}
-
-export default Header

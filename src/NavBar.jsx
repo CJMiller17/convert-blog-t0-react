@@ -7,7 +7,7 @@ function NavBar() {
   return (
     <>
       <Navbar bg="dark" data-bs-theme="dark">
-        <Container>
+        <Container >
           <Link className="navbar-brand" to="/">
             CM
           </Link>

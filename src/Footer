@@ -1,8 +1,0 @@
-
-function Footer() {
-  return (
-    console.log("This is the Footer")
-  )
-}
-
-export default Footer
