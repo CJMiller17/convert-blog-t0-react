@@ -6,9 +6,11 @@ import {createBrowserRouter,RouterProvider,Outlet} from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './CSS/App.css'
 
+
+import About from './About'
 import App from './App'
 import { Navbar } from 'react-bootstrap'
-import About from './About'
+
 import Blog from "./Card"
 import Projects from "./Projects"
 import Resume from "./Resume";

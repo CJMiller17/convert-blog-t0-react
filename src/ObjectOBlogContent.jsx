@@ -60,7 +60,7 @@ let comprehensiveBlogObject = {
       Q1: "What is something you wish you could do but currently do not have the coding skills to accomplish?",
       Q2: "What are you struggling with?",
       Q3: "How do you solve a problem?",
-      Q4: "What methods do you use to help yourself get unstuck?" 
+      Q4: "What methods do you use to help yourself get unstuck?"
     },
     Answers: {
       A1: `To extend the amount of time in a day. 
@@ -325,7 +325,7 @@ let comprehensiveBlogObject = {
           Frameworks and libraries increase efficiency and consistency across teams and across projects.`,
     }
   },
-
+}
 
  
 //   // WEEK 10 BLOG CONTENT
