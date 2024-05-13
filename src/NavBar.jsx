@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 function NavBar() {
   return (
     <>
-      <Navbar bg="dark" data-bs-theme="dark">
+      <Navbar className="navbar" bg="myColor" variant="dark" sticky="top">
         <Container >
           <Link className="navbar-brand" to="/">
             CM

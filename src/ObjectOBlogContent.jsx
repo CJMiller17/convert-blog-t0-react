@@ -325,29 +325,28 @@ let comprehensiveBlogObject = {
           Frameworks and libraries increase efficiency and consistency across teams and across projects.`,
     }
   },
-}
+},
 
- 
-//   // WEEK 10 BLOG CONTENT
-//   Week10: {
-//     MetaData: {
-//       title: ,
-//       date: ,
-//       description: ,
-//     },
-//     Title: ,
-//     Quote: ,
-//     Questions: {
-//       Q1: ,
-//       Q2: ,
-//       Q3: ,
-//     },
-//     Answers: {
-//       A1: ,
-//       A2: ,
-//       A3: ,
-//     }
-//   },
+  // WEEK 10 BLOG CONTENT
+  Week10: {
+    MetaData: {
+      title: "My Ninth Blog Post",
+      date: "2024-05-10T12:00:00.00Z",
+      description: "Ninth Blog Entry for Awesome Inc. Bootcamp",
+    },
+    Title: "May 10<sup>th</sup>",
+    Quote: ,
+    Questions: {
+      Q1: ,
+      Q2: ,
+      Q3: ,
+    },
+    Answers: {
+      A1: ,
+      A2: ,
+      A3: ,
+    }
+  },
 
 //   // WEEK 11 BLOG CONTENT
 //   Week11: {

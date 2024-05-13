@@ -49,7 +49,6 @@ function CardTemplate() {
 function Blog() {
   return (
       <div className="p-5">
-          <NavBar />
       <h1>Blog Page</h1>
       <CardTemplate />
     </div>

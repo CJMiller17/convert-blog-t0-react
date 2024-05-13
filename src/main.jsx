@@ -9,7 +9,7 @@ import './CSS/App.css'
 
 import About from './About'
 import App from './App'
-import { Navbar } from 'react-bootstrap'
+import NavBar from './NavBar'
 
 import Blog from "./Card"
 import Projects from "./Projects"
@@ -17,12 +17,10 @@ import Resume from "./Resume";
 import Footer from "./Footer"
 import ErrorPage from './ErrorPage'
 
-const site = import.meta.env.BASE_URL
-
 function Layout() {
   return (
     <>
-      <Navbar />
+      <NavBar />
       <div id="page-content">
         <Outlet />
       </div>
@@ -59,10 +57,7 @@ const router = createBrowserRouter([
       },
     ],
   }
-],
-  {
-    basename: site,
-  }
+]
 );
 
 ReactDOM.createRoot(document.getElementById('root')).render(

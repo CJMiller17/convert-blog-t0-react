@@ -10,7 +10,7 @@ import {
 
 function Footer() {
   return (
-    <MDBFooter className='text-center text-white' style={{ backgroundColor: '#f1f1f1' }}>
+    <MDBFooter className='whole-footer text-center text-white' style={{ backgroundColor: '#f1f1f1' }}>
       <MDBContainer className='pt-4'>
         <section className='mb-4'>
           <MDBBtn
@@ -18,7 +18,7 @@ function Footer() {
             color='link'
             floating
             size="lg"
-            className='text-dark m-1'
+            className='icon m-1'
             href='#!'
             role='button'
           >
@@ -30,7 +30,7 @@ function Footer() {
             color='link'
             floating
             size="lg"
-            className='text-dark m-1'
+            className='icon m-1'
             href='#!'
             role='button'
           >
@@ -42,7 +42,7 @@ function Footer() {
             color='link'
             floating
             size="lg"
-            className='text-dark m-1'
+            className='icon m-1'
             href='#!'
             role='button'
           >
@@ -54,7 +54,7 @@ function Footer() {
             color='link'
             floating
             size="lg"
-            className='text-dark m-1'
+            className='icon m-1'
             href='#!'
             role='button'
           >
@@ -66,7 +66,7 @@ function Footer() {
             color='link'
             floating
             size="lg"
-            className='text-dark m-1'
+            className='icon m-1'
             href='#!'
             role='button'
           >
@@ -78,7 +78,7 @@ function Footer() {
             color='link'
             floating
             size="lg"
-            className='text-dark m-1'
+            className='icon m-1'
             href='#!'
             role='button'
           >
@@ -87,11 +87,8 @@ function Footer() {
         </section>
       </MDBContainer>
 
-      <div className='text-center text-dark p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+      <div className=' lower-footer text-center p-3' bg="myColor">
         © 2020 Copyright:
-        <a className='text-dark' href='https://mdbootstrap.com/'>
-          MDBootstrap.com
-        </a>
       </div>
     </MDBFooter>
   );
